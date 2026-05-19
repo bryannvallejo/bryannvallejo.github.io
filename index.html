@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera web</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mi primera web</h1>
+
+  <button onclick="mostrarHola()">
+    Botón 1
+  </button>
+
+  <button onclick="mostrarGithub()">
+    Botón 2
+  </button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function mostrarHola() {
+      document.getElementById("resultado").innerText = "Hola mundo";
+    }
+
+    function
